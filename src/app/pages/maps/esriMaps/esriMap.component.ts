@@ -14,11 +14,11 @@ export class EsriMapComponent implements OnInit {
   @ViewChild('map') mapEl: ElementRef;
   map: any;
   baseURL = {
-    mapToponymesURL: 'https://reflex-crt.akka.eu:6443/arcgis/rest/services/toponymes/MapServer',
-    mapViaNavigoURL: 'https://reflex-crt.akka.eu:6443/arcgis/rest/services/ViaNavigo/MapServer',
-    imageLayerURL: 'https://reflex-crt.akka.eu:6443/arcgis/rest/services/REFLEX_OM_FA/MapServer',
-    vectorsLayerBaseURL: 'https://reflex-crt.akka.eu:6443/arcgis/rest/services/REFLEX_OM_FA/FeatureServer/',
-    geometryServiceURL: 'https://reflex-crt.akka.eu:6443/arcgis/rest/services/Utilities/Geometry/GeometryServer',
+    mapToponymesURL: 'ESRI_MAPS_SERVER_URL_TO_INSERT/toponymes/MapServer',
+    mapViaNavigoURL: 'ESRI_MAPS_SERVER_URL_TO_INSERT/ViaNavigo/MapServer',
+    imageLayerURL: 'ESRI_MAPS_SERVER_URL_TO_INSERT/MapServer',
+    vectorsLayerBaseURL: 'ESRI_MAPS_SERVER_URL_TO_INSERT/FeatureServer/',
+    geometryServiceURL: 'ESRI_MAPS_SERVER_URL_TO_INSERT/Utilities/Geometry/GeometryServer',
   }
   loadedFeatureLayers: any[] = [];
   geometryService = null;
